@@ -57,9 +57,18 @@ const loadMealDetail2 = async(idMeal) => {
     const url = `
     https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}
     `
-    const res = await fetch(url);
-    const data = await res.json();
-    displayMealDetails(data)
+    // main async await steps
+
+    // const res = await fetch(url);
+    // const data = await res.json();
+    // displayMealDetails(data)
+
+    // add error and async await
+    try{
+        const res = await fetch(url);
+        const data = await res.json();
+        displayMealDetails(data)
+    }
 }
 
 const displayMealDetails = meal => {
