@@ -42,11 +42,12 @@ const searchMeals = () => {
 // modal part
 const loadMealDetail = idMeal => {
     const url = `
-    https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}
+    www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}
     `
     fetch(url)
     .then(res => res.json())
     .then(data => displayMealDetails(data))
+    .catch(error => console.log(error))
 }
 
 const displayMealDetails = meal => {
@@ -58,7 +59,7 @@ const displayMealDetails = meal => {
         <img src="${meal.meals[0].strMealThumb}" class="card-img-top img-fluid">
         Youtube: ${meal.meals[0].strYoutube}
         `
-        // console.log(meal.meals[0].strMeal);
+        // console.log(meal.meals);
 };
 
 loadMeals('rice');
