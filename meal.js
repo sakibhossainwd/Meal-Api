@@ -13,7 +13,6 @@ const displayMeals = meals => {
     const mealsContainer = document.getElementById('meals-container');
     mealsContainer.innerHTML = '';
     meals.forEach( meal => {
-        // console.log(meal)
         // step 2: create child for each element
         const mealDiv = document.createElement('div');
         mealDiv.classList.add('col');
@@ -30,8 +29,6 @@ const displayMeals = meals => {
                   </div>
 
         `;
-
-
         // step 4: appendChild
         mealsContainer.appendChild(mealDiv);
     });
