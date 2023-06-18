@@ -8,7 +8,6 @@ const loadMeals = (searchText) =>{
 }
 
 const displayMeals = meals => {
-    // console.log(meals[0].strMeal
     //     )
     // step 1: container element
     const mealsContainer = document.getElementById('meals-container');
