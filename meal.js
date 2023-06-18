@@ -70,7 +70,7 @@ const loadMealDetail2 = async(idMeal) => {
         displayMealDetails(data)
     }
     catch(error){
-        console.log('Error: ', error)
+        console.log('Error:- ', error)
     }
 }
 
