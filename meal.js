@@ -54,7 +54,7 @@ const displayMealDetails = meal => {
     const modalDetails = document.getElementById('Modal-details-body')
     modalDetails.innerHTML = `
         ID: ${meal.meals[0].idMeal} </br>
-        Category: ${meal.meals[0].strCategory} </br>
+        <h4>Category: ${meal.meals[0].strCategory}</h4> </br>
         <img src="${meal.meals[0].strMealThumb}" class="card-img-top img-fluid">
         Youtube: ${meal.meals[0].strYoutube}
         `
