@@ -69,6 +69,9 @@ const loadMealDetail2 = async(idMeal) => {
         const data = await res.json();
         displayMealDetails(data)
     }
+    catch(error){
+        console.log('Error: ', error)
+    }
 }
 
 const displayMealDetails = meal => {
