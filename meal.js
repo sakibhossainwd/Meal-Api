@@ -47,7 +47,9 @@ const loadMealDetail = idMeal => {
     fetch(url)
     .then(res => res.json())
     .then(data => displayMealDetails(data))
-    .catch(error => console.log(error))
+    .catch(error => {
+        console.log(error)
+    })
 }
 
 const displayMealDetails = meal => {
