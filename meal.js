@@ -61,4 +61,4 @@ const displayMealDetails = meal => {
         // console.log(meal.meals[0].strMeal);
 };
 
-loadMeals('fish');
+loadMeals('rice');
