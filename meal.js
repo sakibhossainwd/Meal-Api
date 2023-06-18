@@ -48,12 +48,11 @@ const loadMealDetail = idMeal => {
     .then(res => res.json())
     .then(data => displayMealDetails(data))
 }
-const modalDetails = document.getElementById('Modal-details-body')
 
 const displayMealDetails = meal => {
     document.getElementById('mealDetailsLabel').innerText = meal.meals[0].strMeal;
-    
-     modalDetails.innerHTML = `
+    const modalDetails = document.getElementById('Modal-details-body')
+    modalDetails.innerHTML = `
         ID: ${meal.meals[0].idMeal} </br>
         Category: ${meal.meals[0].strCategory} </br>
         <img src="${meal.meals[0].strMealThumb}" class="card-img-top img-fluid">
