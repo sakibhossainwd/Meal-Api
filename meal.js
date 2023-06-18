@@ -33,11 +33,10 @@ const displayMeals = meals => {
         mealsContainer.appendChild(mealDiv);
     });
 }
- 
+
+// search meals
 const searchMeals = () => {
-    const searchText = document.getElementById('search-field').value;
-    // search meals
-    console.log(searchText);  
+    const searchText = document.getElementById('search-field').value;  
     loadMeals(searchText);
 }
 
