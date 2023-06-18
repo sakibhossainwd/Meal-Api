@@ -39,9 +39,8 @@ const searchMeals = () => {
     const searchText = document.getElementById('search-field').value;  
     loadMeals(searchText);
 }
-
+// modal part
 const loadMealDetail = idMeal => {
-    console.log(idMeal);
     const url = `
     https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}
     `
